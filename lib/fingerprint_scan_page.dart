@@ -161,10 +161,10 @@ class _FingerprintScanPageState extends State<FingerprintScanPage> with SingleTi
             child: Container(
               padding: const EdgeInsets.all(32),
               decoration: BoxDecoration(
-                color: _isVerified ? Colors.green.withOpacity(0.1) : Colors.blue.withOpacity(0.05),
+                color: _isVerified ? Colors.green.withValues(alpha: 0.1) : Colors.blue.withValues(alpha: 0.05),
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: _isVerified ? Colors.green : Colors.blue.withOpacity(0.2), 
+                  color: _isVerified ? Colors.green : Colors.blue.withValues(alpha: 0.2),
                   width: 2
                 ),
               ),
