@@ -52,7 +52,7 @@ class BiometricLoginPage extends StatelessWidget {
                     border: Border.all(color: const Color(0xFFF1F4F9)),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.02),
+                        color: Colors.black.withValues(alpha: 0.02),
                         blurRadius: 15,
                         offset: const Offset(0, 8),
                       ),
@@ -103,7 +103,7 @@ class BiometricLoginPage extends StatelessWidget {
                       children: [
                         Icon(Icons.fingerprint, size: 24),
                         SizedBox(width: 8),
-                        const Text(
+                         Text(
                           'Enable Biometric Login',
                           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
@@ -175,7 +175,7 @@ class BiometricLoginPage extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: iconColor.withOpacity(0.1),
+              color: iconColor.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(10),
             ),
             child: Icon(icon, color: iconColor, size: 20),

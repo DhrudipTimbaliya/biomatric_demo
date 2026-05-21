@@ -8,7 +8,8 @@ import 'package:flutter/services.dart';
 class AuthController extends GetxController {
   final LocalAuthentication auth = LocalAuthentication();
   final box = GetStorage();
-  
+
+
   // Default Dummy Data
   var name = "John Doe".obs;
   var phone = "+91 98765 43210".obs;
